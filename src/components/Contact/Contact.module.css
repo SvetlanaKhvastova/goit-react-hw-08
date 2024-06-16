@@ -1,0 +1,28 @@
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  padding: 15px 15px;
+  border: 1px solid black;
+  border-radius: 3px;
+  text-align: left;
+  width: calc(33.3333333333% - 15px);
+}
+.item > div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.item p {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.button {
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  padding: 5px 10px;
+  cursor: pointer;
+}/*# sourceMappingURL=Contact.module.css.map */

@@ -1,0 +1,25 @@
+.contactForm {
+  max-width: 500px;
+  padding: 15px;
+  border: 1px solid #000;
+  margin-top: 20px;
+  & label {
+    font-weight: 700;
+  }
+  & button {
+    margin-top: 15px;
+  }
+}
+.labelWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.input {
+  border-radius: 3px;
+  padding: 5px 10px;
+  border: 1px solid black;
+}
+.error {
+  color: red;
+}
