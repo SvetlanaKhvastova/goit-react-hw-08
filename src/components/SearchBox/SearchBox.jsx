@@ -3,8 +3,6 @@ import css from "./SearchBox.module.css";
 
 import { useId } from "react";
 import { changeFilter, selectNameFilter } from "../../redux/filtersSlice";
-// import { getFilter } from "../../redux-old/selectors";
-// import { getNameFilter } from "../../redux-old/actions";
 
 const SearchBox = () => {
   const id = useId();

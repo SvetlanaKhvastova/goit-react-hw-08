@@ -2,8 +2,7 @@ import css from "./Contact.module.css";
 import { FaUserSecret } from "react-icons/fa6";
 import { FaPhone } from "react-icons/fa6";
 import { useDispatch } from "react-redux";
-import { deleteContact } from "../../redux/contactsSlice";
-// import { deleteContact } from "../../redux-old/actions";
+import { deleteContact } from "../../redux/contactsOps";
 
 const Contact = ({ contact, txtBtn }) => {
   const { id, name, number } = contact;
