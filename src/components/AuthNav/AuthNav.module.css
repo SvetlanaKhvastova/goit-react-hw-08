@@ -1,0 +1,14 @@
+.auth_nav_wrapper {
+  display: flex;
+  gap: 30px;
+}
+
+.link {
+  color: white;
+  text-decoration: none;
+}
+
+.active {
+  font-weight: 700;
+  text-decoration: underline;
+}/*# sourceMappingURL=AuthNav.module.css.map */

@@ -1,0 +1,13 @@
+.main_nav_wrapper {
+  display: flex;
+  gap: 30px;
+}
+.link {
+  color: white;
+  text-decoration: none;
+}
+
+.active {
+  text-decoration: underline;
+  font-weight: 700;
+}

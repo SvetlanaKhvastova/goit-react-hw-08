@@ -1,21 +1,33 @@
 import css from "./Contact.module.css";
-import { FaUserSecret } from "react-icons/fa6";
+
 import { FaPhone } from "react-icons/fa6";
 import { useDispatch } from "react-redux";
-import { deleteContact } from "../../redux/contactsOps";
+import { deleteContact } from "../../redux/contacts/operations";
+import { BiSolidCat } from "react-icons/bi";
+import { useToggle } from "../../hooks/useToggle";
+import ModalConfirm from "../ModalConfirm/ModalConfirm";
 
 const Contact = ({ contact, txtBtn }) => {
   const { id, name, number } = contact;
 
+  const { isOpen, open, close } = useToggle();
+
   const dispatch = useDispatch();
-  const handleDelete = () => dispatch(deleteContact(id));
+  const handleDelete = () => {
+    open();
+  };
+
+  const confirmDelete = () => {
+    dispatch(deleteContact(id));
+    close();
+  };
 
   return (
     <>
       <li id={id} className={css.item}>
         <div>
           <p>
-            <FaUserSecret />
+            <BiSolidCat />
             {name}
           </p>
           <p>
@@ -27,6 +39,7 @@ const Contact = ({ contact, txtBtn }) => {
           {txtBtn}
         </button>
       </li>
+      <ModalConfirm isOpen={isOpen} close={close} confirmDelete={confirmDelete} message="Are you sure you want to delete this contact?" />
     </>
   );
 };

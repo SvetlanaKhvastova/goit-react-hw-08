@@ -1,0 +1,53 @@
+.Modal {
+  max-width: calc(100vw - 48px);
+  max-height: calc(100vh - 24px);
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 5px;
+}
+
+.Overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1200;
+}
+.btn_wrapper {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 20px;
+  gap: 10px;
+}
+.button_yes,
+.button_no {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button_yes {
+  background-color: #4caf50; /* Green */
+  color: white;
+}
+
+.button_yes:hover {
+  background-color: #45a049;
+}
+
+.button_no {
+  background-color: #f44336; /* Red */
+  color: white;
+}
+
+.button_no:hover {
+  background-color: #d32f2f;
+}

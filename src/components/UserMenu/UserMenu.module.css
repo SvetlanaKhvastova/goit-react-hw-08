@@ -1,0 +1,39 @@
+.userMenuContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #f4f4f4;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.userImage {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.userName {
+  margin-right: auto;
+  color: #333;
+  font-size: 1rem;
+}
+
+.logoutButton {
+  padding: 5px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.logoutButton:hover {
+  background-color: #0056b3;
+}/*# sourceMappingURL=UserMenu.module.css.map */

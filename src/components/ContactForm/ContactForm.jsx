@@ -6,7 +6,7 @@ import { useId } from "react";
 
 import Button from "../Button/Button";
 import { useDispatch } from "react-redux";
-import { addContact } from "../../redux/contactsOps";
+import { addContact } from "../../redux/contacts/operations";
 
 const initialValues = {
   name: "",
